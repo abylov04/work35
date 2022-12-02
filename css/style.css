@@ -1,0 +1,94 @@
+/* /* *{
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+body{ 
+    font-family: Arial, Helvetica, sans-serif; 
+    background: #fff; 
+    color: #000; 
+    font-size: 14px; 
+    line-height: 1.3; 
+    margin: 0; 
+} 
+a{ 
+    text-decoration: none; 
+} 
+li{ 
+    list-style: none; 
+} 
+.container{ 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+}  */
+.box{
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    animation-name: ripple;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ripple{
+    0%{
+        transform: scale(2);
+        background-color: rgb(50, 16, 220);
+        transform: translateY(450px);
+    }
+    50%{
+        transform: scale(0);
+        background-color: linear-gradient  rgb(255,30,0) ;
+        font-size: 50px;
+    }
+    100%{
+        transform: scale(1);
+        background-color: black;
+    }
+} */
+.boll{
+    width: 100px;
+    transform: translate(400px 485px);
+    animation-name: play;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 888;
+}
+.basket{
+    width: 330px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+@keyframes play{
+    48%{
+        transform: translate(1052px,485px)
+    }
+    50%{
+        transform: translate(1052px,0px);
+    }
+    100%{
+        transform: translate(1052px,0px);
+    }
+}
+/* @keyframes play{
+    0%{
+
+    }
+    50%{
+        transform: translateY(487px ) scale(1.5);
+    }
+    100%{
+
+    }
+} */
